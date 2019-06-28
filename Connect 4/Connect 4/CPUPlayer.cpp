@@ -16,3 +16,8 @@ int CPUPlayer::move(C4Board& b1)
 {
 
 }
+
+void CPUPlayer::resetGame()
+{
+
+}

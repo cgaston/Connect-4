@@ -11,6 +11,7 @@ public:
 	bool placePiece(int move, bool firstMoves);
 	char validMoves();
 	void initBoard();
+	bool boardIsFull();
 private:
 	char myBoard[6][7];
 	bool isWinningMove(int row, int col);

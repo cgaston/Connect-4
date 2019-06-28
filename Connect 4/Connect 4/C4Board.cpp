@@ -115,3 +115,16 @@ char C4Board::getAt(int row, int col)
 		returnVal = myBoard[row][col];
 	return returnVal;
 }
+
+bool C4Board::boardIsFull() //used to help determine if game was a tie or not
+{
+	for (int r = 0; r < 6; r++)
+	{
+		for (int c = 0; c < 7; c++)
+		{
+			if (myBoard[r][c] == 0)
+				return false;
+		}
+	}
+	return true;
+}
