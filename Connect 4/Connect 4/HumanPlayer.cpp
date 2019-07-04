@@ -1,6 +1,5 @@
 #include "HumanPlayer.h"
-#include <iostream>
-#include <sstream>
+#include "GlobalFunctions.h"
 
 using namespace std;
 

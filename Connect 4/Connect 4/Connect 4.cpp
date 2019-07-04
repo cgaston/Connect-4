@@ -1,14 +1,11 @@
 // Connect 4.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
-
-#include <iostream>
-#include <sstream>
+#include "GlobalFunctions.h"
 #include "Player.h"
 #include "HumanPlayer.h"
 
 using namespace std;
 
-int getUserResponse(string s1, string s2);
 void playGame(Player& p1, Player& p2, C4Board& b1);
 
 int main()
@@ -38,19 +35,6 @@ int main()
 	} while (true);
 	delete(p1);
 	delete(p2);
-}
-
-int getUserResponse(string question, string accResp) //take input of a question and list of acceptable responses and output question to user and only let them continue with acceptable response
-{
-	string input;
-	int result;
-	do
-	{
-		cout << question;
-		getline(cin, input);
-		result = accResp.find(toupper(input[0])); //run loop until user enters a response that can be found in accResp and return index where it was found (case insensitive)
-	} while (result == string::npos);
-	return result;
 }
 
 void playGame(Player& p1, Player& p2, C4Board& b1)

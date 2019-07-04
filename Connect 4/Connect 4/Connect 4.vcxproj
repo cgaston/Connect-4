@@ -154,12 +154,14 @@
     <ClCompile Include="C4Board.cpp" />
     <ClCompile Include="Connect 4.cpp" />
     <ClCompile Include="CPUPlayer.cpp" />
+    <ClCompile Include="GlobalFunctions.cpp" />
     <ClCompile Include="HumanPlayer.cpp" />
     <ClCompile Include="Player.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C4Board.h" />
     <ClInclude Include="CPUPlayer.h" />
+    <ClInclude Include="GlobalFunctions.h" />
     <ClInclude Include="HumanPlayer.h" />
     <ClInclude Include="Player.h" />
   </ItemGroup>
