@@ -13,7 +13,7 @@ int main()
 	C4Board c1;
 	Player* p1;
 	Player* p2;
-	int respInd = getUserResponse("How many players do you want (1-2_?: ", "012");
+	int respInd = getUserResponse("How many players do you want (1-2)?: ", "012");
 	if (respInd == 2)
 	{
 		p1 = new HumanPlayer;
